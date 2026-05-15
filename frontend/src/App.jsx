@@ -66,18 +66,22 @@ function App() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden fixed inset-0 top-16 bg-luxury-black/95 backdrop-blur-md z-40">
-            <div className="flex flex-col items-center justify-center h-full space-y-8">
+            <div className="flex flex-col items-center justify-start pt-12 px-6 space-y-6">
               {NAV_LINKS.map(link => (
                 <a 
                   key={link.href} 
                   href={link.href} 
-                  className="text-2xl hover:text-luxury-gold transition-colors"
+                  className="text-xl w-full text-center py-3 hover:text-luxury-gold transition-colors border-b border-gray-800"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
                 </a>
               ))}
-              <a href="#booking" className="btn-gold" onClick={() => setMobileMenuOpen(false)}>
+              <a 
+                href="#booking" 
+                className="btn-gold w-full text-center mt-4" 
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 Book Instantly
               </a>
             </div>
