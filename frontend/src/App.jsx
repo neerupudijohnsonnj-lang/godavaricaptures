@@ -18,8 +18,19 @@ function App() {
   const handleBookingSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
+    
+    // Check if backend is configured
+    const API_URL = import.meta.env.VITE_API_URL
+    
+    if (!API_URL) {
+      alert('📧 Thank you for your interest!\n\nPlease contact us directly:\n\n📞 Phone: +91 7780494179\n✉️ Email: neerupudijohnsonnj@gmail.com\n\nWe will get back to you shortly!')
+      setIsSubmitting(false)
+      setBookingForm({ name: '', phone: '', service: 'Weddings', event_date: '', location: '', message: '' })
+      return
+    }
+    
     try {
-      const response = await fetch('/api/bookings', {
+      const response = await fetch(`${API_URL}/api/bookings`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({...bookingForm, event_time: ''})
@@ -32,7 +43,7 @@ function App() {
         alert(`Error: ${errorData.detail || 'Failed to submit booking'}`)
       }
     } catch (error) {
-      alert('Error submitting booking: ' + error.message)
+      alert('📧 Unable to connect to booking system.\n\nPlease contact us directly:\n\n📞 Phone: +91 7780494179\n✉️ Email: neerupudijohnsonnj@gmail.com')
     } finally {
       setIsSubmitting(false)
     }
