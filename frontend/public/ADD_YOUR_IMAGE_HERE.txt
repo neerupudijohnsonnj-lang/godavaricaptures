@@ -1,0 +1,23 @@
+═══════════════════════════════════════════════════════════════
+  SAVE YOUR GODAVARI RIVER IMAGE HERE
+═══════════════════════════════════════════════════════════════
+
+📸 The beautiful sunset image you shared (with the bridge and boats)
+   needs to be saved in this folder!
+
+📁 SAVE IT AS: hero-godavari.jpg
+
+📍 FULL PATH: 
+   C:\Users\prasa\Desktop\godavari ca\frontend\public\images\hero-godavari.jpg
+
+✅ STEPS:
+   1. Right-click on your Godavari sunset image
+   2. Save/Download it
+   3. Rename it to: hero-godavari.jpg
+   4. Move it to this images folder
+   5. Refresh your browser at http://localhost:3000
+
+🎨 The website is already configured to show it!
+   It will appear as the hero background automatically.
+
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,21 @@
+# FastAPI and server
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# Data validation
+pydantic>=2.10.0
+email-validator==2.3.0
+
+# Email functionality
+aiosmtplib==5.1.0
+python-dotenv==1.0.0
+
+# MongoDB (optional)
+motor==3.7.1
+pymongo==4.10.1
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+httpx==0.28.1
+hypothesis==6.122.3
