@@ -114,11 +114,7 @@ function App() {
           <h1 className="font-display text-5xl md:text-7xl mb-6 text-luxury-gold">
             Capturing Moments. Creating Stories.
           </h1>
-          <p className="text-2xl md:text-3xl mb-4">{BRAND.tagline}</p>
-          <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-            A premium photography & reel-making studio crafting cinematic stories on the banks of the Godavari. 
-            Book instantly and let's create magic together.
-          </p>
+          <p className="text-2xl md:text-3xl mb-8">{BRAND.tagline}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a href="#booking" className="btn-gold">Book Instantly</a>
             <a href="#portfolio" className="btn-outline">View Portfolio</a>
